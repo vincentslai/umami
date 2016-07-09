@@ -1,0 +1,29 @@
+<div class="alert alert-warning" ng-controller="zipSecond">
+	<h3> second Page </h3>
+	<p >{{model.message}}</p>
+	
+	<a href="#/">Home</a>
+
+	<div ng-controll="getQuote">
+		<p>Test</p>
+		<pre>{{quotes }}</pre>
+	</div>
+
+</div>
+
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<p>Today's welcome message is:</p>
+<h1>{{myWelcome}}</h1>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+    $http.get("http://ziptasticapi.com/60640")
+    .then(function(response) {
+        $scope.myWelcome = response.data;
+    });
+});
+</script>

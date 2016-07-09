@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="routeApp">
+<head lang='en'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="Vincent Lai Chicago"/>
+    <title>Robert Castillo</title>
+    <!-- The Javascript helper files -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/scriptsController.js"></script>
+    
+    <!-- All the google Fonts link --> 
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+
+    <!-- The Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body >
+    <div class="jumbotron" id="head">
+    <nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-ng-init="isCollapsed = true" data-ng-click="isCollapsed = !isCollapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-ng-class="{collapse: isCollapsed}">
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-click="isCollapsed=!isCollapsed"><a href="#/">Home</a>
+            </li>
+            <li ng-click="isCollapsed=!isCollapsed"><a href="#/portfolio">Portfolio</a>
+            </li>
+            <li ng-click="isCollapsed=!isCollapsed"><a href="#/blog">Blog</a>
+            </li>
+            <li ng-click="isCollapsed=!isCollapsed"><a href="#/aboutMe">About Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+        <div class="container">
+            <h2 class="pacifico text-center" id="logo1">Robert Castillo</h2>
+        </div>
+    </div><!-- end of jumbotron -->
+    
+    <div id="contentBody" ng-view></div>
+    <footer>
+        <div class="container topPart">
+            <h3 class="sigma text-center">Blog</h3>
+            <div class="col-md-12" >
+                <p class="blogBlock">Getting Ready for Potsticker Sauce. May 2016</p>
+                <p class="blogBlock">Visit to Puerto Rican and their dish. June 2016</p>
+            </div>
+         <p>&nbsp  </p>
+
+        </div>
+        <div class="container text-center bottomPart">
+            <p>&nbsp  </p>
+        <a href="https://www.linkedin.com/in/vincent-lai-18053ba"><img src="images/linkedin.png"  height="25px"></a>
+        <a href="http://www.facebook.com/vincentcorner"><img src="images/facebook1.png"  height="25px"> </a>
+        <p >&copy 2016 Robert Castillo. All rights reserved</p>
+    </div>
+
+
+    </footer>
+</body>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.min.js"></script>
+</html>

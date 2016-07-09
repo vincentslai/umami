@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="col-md-12 text-center">
+        <h3 class="pacifico ">Welcome to Vincent Zone</h3>
+        <p >Hi my name is Robert. <a href="#/aboutMe">(more ...)</a> </p>
+    </div>
+
+    <div class="col-md-12 text-center">
+        <h3 class="pacifico">Portfolio</h3>
+    </div>
+    
+    <a href="#/portfolio">
+    <div class="col-md-12 text-center">
+        <img src="images/pic1.jpg" class="img-rounded photo2" height="150px">
+        <img src="images/pic2.jpg" class="img-rounded photo2" height="150px">
+        <img src="images/pic3.jpg" class="img-rounded photo2" height="150px">
+    </div>
+    <p>&nbsp  </p>
+    <div class="col-md-12 text-center">
+        <img src="images/pic4.jpg" class="img-rounded photo2" height="150px">
+        <img src="images/pic5.jpg" class="img-rounded photo2" height="150px">
+        <img src="images/pic6.jpg" class="img-rounded photo2" height="150px">
+    </div>
+    </a>
+
+<p>&nbsp  </p>
+    <div class="col-md-12 latoQuote" ng-controller="getQuote">
+        <div ng-repeat ="q in quotes" class="quoteDiv text-center">
+        <div ng-controller="getRandomNumber">
+        <script> var randomNum = {{randomNumber}} </script>
+        <!-- assign randomNum from randomNumber function, the trailing double quote to prevent it to print-->
+        <p> {{randomNum =randomNumber; ""}} </p> 
+        <p>  {{q[randomNum].quote }}</p>
+        <p>- {{q[randomNum].author}} </p> 
+    </div>
+        </div>
+    </div>
+    
+
+
+    </div> <!-- end of container -->

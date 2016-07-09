@@ -1,0 +1,140 @@
+.body {
+	font-family: 'Lato', sans-serif;
+}
+
+p{
+	 font-size: 1.2em;
+}
+
+.jumbotron {
+	background-image: url(../images/group.jpg);
+	background-size: cover;
+	position: fixed;
+	width: 100%;
+	height: 240px;
+	top: 0px;
+	z-index: 10000;
+}
+
+#contentBody {
+	margin-top: 250px;
+	margin-bottom: 100px;
+}
+
+.quoteDiv{
+	border-radius: 10px;
+    background: #F5F5F5;
+    width: 75%;
+    margin: auto;
+    padding: 15px;
+}
+
+.sigma {
+	font-family: 'Sigmar One', cursive;
+	color: #5C4033;
+}
+
+.pacifico{
+	font-family: 'Pacifico', cursive;
+	color: #FFA500;
+}
+
+.latoQuote {
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	font-size: 1em;
+}
+
+.blogBlock{
+	width: 55%;
+	margin: auto;
+}
+
+a.navbar-brand  {
+	width: 160px; height: 66px;
+	/*background: url(../images/logo.png) no-repeat 0 0; 
+	background-size: contain; */
+	top: 100px; left: 20px; 
+}
+
+a.navbar-brand span { 
+	color: orange;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.navbar {
+	background: rgba(0, 0, 0, 0);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border: none;
+
+}
+
+.navbar-default .navbar-nav>li>a {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: orange;
+}
+
+.navbar-collapse{
+	border: none;	/* This two line get rid of the white line */
+	box-shadow: none;
+	background: rgba(255, 255, 255, .3);
+}
+
+footer .topPart{
+    background-color: #ADD8E6;
+    border: 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer .bottomPart{
+    color: #fff;
+    background-color: #5C4033;
+    padding: 20px ;
+    border: 0;
+    margin: 0;
+    width: 100%;
+}
+
+@media all and (min-width: 992px) {
+  	.photo1{
+  		height: 150px;
+  	}
+
+  	
+}
+
+@media only screen and (max-width: 576px) {
+  	.photo2{
+  		height: 100px;
+  	}
+  	.photo1{
+  		height: 70px;
+  	}
+
+.blogBlock{
+		width: 90%;
+	}
+  	
+}
+
+
+@media only screen and (max-width: 767px){
+#logo1 {
+    position: fixed;
+    top: -10px;
+}
+
+.blogBlock{
+		width: 90%;
+	}
+}
